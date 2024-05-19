@@ -1,7 +1,15 @@
 import TgBot from "node-telegram-bot-api";
 import dotenv from "dotenv";
+import express from "express";
 import { getMp3, search_songs } from "./scrapper.js";
 dotenv.config();
+const app = express();
+//express server
+const port = process.env.PORT || 3000;
+app.listen(port, () => console.log("listening on port", port));
+app.get("/", (req, res) => {
+  res.send("service is up...");
+});
 
 const token = process.env.BOT_TOKEN;
 const bot = new TgBot(token, { polling: true });
