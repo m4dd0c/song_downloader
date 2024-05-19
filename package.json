@@ -1,0 +1,19 @@
+{
+  "name": "m4dd0x_weeb_bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon index"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "node-telegram-bot-api": "^0.65.1",
+    "puppeteer": "^22.9.0"
+  }
+}
